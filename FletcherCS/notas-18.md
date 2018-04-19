@@ -87,3 +87,10 @@ http://sinonjs.org/releases/v4.5.0/
 https://facebook.github.io/jest/
 
 https://www.google.com.mx/search?q=tdd+&ie=utf-8&oe=utf-8&client=firefox-b-ab&gfe_rd=cr&dcr=0&ei=C7DXWtLaJPPTXrfmqDg
+
+
+declarar const, arrow funtion
+
+ademas generar test/dummy
+
+    
