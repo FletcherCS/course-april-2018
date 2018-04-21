@@ -1,0 +1,44 @@
+{
+  "name": "easy-front-build",
+  "version": "0.2.4",
+  "description": "This package generate a basic structure of files (html, js && css) by  module name",
+  "main": "lib/index.js",
+  "bin": {
+    "easy-front-build": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node index",
+    "create": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorge151095/easy-front-build.git"
+  },
+  "keywords": [
+    "easy",
+    "struct",
+    "generate",
+    "basic",
+    "files",
+    "html",
+    "js",
+    "css"
+  ],
+  "author": "Abraham Espinosa, Jorge Antonio, Alejandro Caravantes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jorge151095/easy-front-build/issues"
+  },
+  "homepage": "https://github.com/jorge151095/easy-front-build#readme",
+  "dependencies": {
+    "caller-path": "^2.0.0",
+    "chalk": "^2.3.2",
+    "usage-libraries-validate": "^0.1.0",
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3",
+    "sinon": "^4.5.0"
+  }
+}
