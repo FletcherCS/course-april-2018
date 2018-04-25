@@ -1,23 +1,21 @@
-t.d.d.
+# TDD = Test Driven Development
 
-test driven development
+1. Pensar en pruebas que garanticen la funcionalidad
+    1. Hacer que la prueba falle
+2. Escribir codigo minimo necesario para que dicha funcionalidad se cumpla
+    1. Forzar a que las pruebas fallen, garantizar que las pruebas sean confiables
+3. Refector sin agregar nuevas funcionalidades, quitar lo obsoleto y agregar las nuevas herramientas
 
-1.- pensar en pruebas que garanticen la funcionalidad
-
-1.5.- Hacer que la prueba falle
-
-2.- escribir codigo minimo necesario para que dicha funcionalidad se cumpla
-
-3.- refector sin agregar nuevas funcionalidades
+## Ventajas de TDD
+- Mantenibilidad del código
 
 
-ventajas
-mantenibilidad del codigo
+## SOLID
 
-solid good paracticles javascript
+Las siglas SOLID corresponden a buenas prácticas de programación y son principios no escritos que garantizan un buen código
 
-te 5 solid javascript, son principios no escritos que garantizan un buen codigo
-
+- S => Single Responsability
+- O => 
 s - single responsability
 o -
 
@@ -93,4 +91,8 @@ declarar const, arrow funtion
 
 ademas generar test/dummy
 
-    
+#BDD
+
+Behaivor
+
+la diferencia es la sintaxis
