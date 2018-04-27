@@ -30,7 +30,7 @@ this.dispatchEvent(
         'event-name',{
             bubble: true,
             composed: false
-            data
+            detail: altura/ancho/etc
         }
     )
 );

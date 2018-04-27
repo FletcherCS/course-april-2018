@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>my-component demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-loader.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../my-component.html">
+
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic my-component demo</h3>
+      <demo-snippet>
+        <template>
+          <my-component data-images='
+          [ [{"name": "book1", "url": "book1.jpg"},{"name":"book2", "url": "book2.jpg"}], [{"name":"book3", "url": "book3.jpg"}], [{"name":"book4",
+          "url": "book4.jpg"},{"name":"book5", "url": "book5.jpg"}] ]
+ '></my-component>
+        </template>
+      </demo-snippet>
+    </div>
+  </body>
+</html>

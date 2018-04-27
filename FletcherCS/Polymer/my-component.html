@@ -1,0 +1,70 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../paper-button/paper-button.html">
+
+<dom-module id="my-component">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+      .images-container{
+        display: flex;
+      }
+
+    </style>
+    <div class="container">
+      <template is="dom-repeat" items="[[dataImages]]" as="columns">
+        <template is="dom-repeat" items="[[columns]]" as="images">
+          <div class="images-container">
+            <img src="../images/[[images.url]]" alt="[[images.name]]" width$="[[getImageWidth]]" height$="[[getImageHeigth]]">
+          </div>
+        </template>
+      </template>
+    </div>
+</template>
+
+  <script>
+    /**
+     * `my-component`
+     * my first element in polymer
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class MyComponent extends Polymer.Element {
+      static get is() { return 'my-component'; }
+      static get properties() {
+        return {
+          dataImages: { //siempre en camelCase y del lado de html va a ser dash-case
+            type: Array,
+            value: [],
+            observer: 'funcion'
+          }
+        };
+      }
+
+      funcion(){
+        console.log(this.dataImages);
+      }
+
+      connectedCallback(){
+        super.connectedCallback();
+      }
+
+      getImageWidht(){
+        const total = 100;
+        let width = total / this.dataImages.lenght;
+        return `${width}%` 
+      }
+
+      getImageHeigth(columns) {
+        const total = 100;
+        let height = total / this.dataImages.lenght;
+        return `${width}%`
+      }
+    }
+
+    window.customElements.define(MyComponent.is, MyComponent);
+  </script>
+</dom-module>
