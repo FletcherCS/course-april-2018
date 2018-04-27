@@ -158,6 +158,13 @@
     opacity: .5;
 }
 
+.bottom__div__search img,
+.bottom__div__download img,
+.bottom__div__enjoy img{
+    width: 7vw;
+}
+
+
 
 /* Efectos */
 
@@ -293,11 +300,7 @@
     /* bottom div*/
 
     .bottom__div{
-        display: block;
-        background-color: #0ac0c7;
-        height: 400px;
-        margin-top: 10%;
-        bottom: 0
+        height: 240px;
     }
 
     .bottom__div__section{
@@ -317,6 +320,13 @@
         opacity: .5;
     }
 
+    .bottom__div__search img,
+    .bottom__div__download img,
+    .bottom__div__enjoy img{
+        width: 7vw;
+    }
+
+
     
     .bottom__div__search p,
     .bottom__div__download p,
@@ -332,10 +342,62 @@
 
 
     .div__invisible{
-        display: block;
+        display: flex;
         width: 80%;
         height: 30%;
         border: 1px solid white;
+        justify-content: center;
+        align-items: center;
+        margin: 5% auto;
     }
 }
 
+@media screen and (min-width: 1024px){
+       .bottom__div{
+        height: 500px;
+        margin-top: 5%;
+    }
+
+}
+
+@media screen and (min-width: 1247px){
+    .bottom__div{
+        height: 500px;
+        margin-top: 11%;        
+    }
+    
+    .bottom__div__search,
+    .bottom__div__download,
+    .bottom__div__enjoy{
+        margin-top: 50%
+    }
+}
+
+
+@media screen and (min-width:1740px){
+    .bottom__div{
+        height: 800px;
+    }
+
+    .bottom__div__search,
+    .bottom__div__download,
+    .bottom__div__enjoy{
+        margin-top: 70%;
+    }
+}
+
+@media screen and (min-width: 2168px){
+    .bottom__div{
+        height: 1000px;
+    }
+
+    .bottom__div__search,
+    .bottom__div__download,
+    .bottom__div__enjoy{
+        margin-top: 80%;
+    }
+}
+
+@media screen and (min-width: 2560px){
+
+}
