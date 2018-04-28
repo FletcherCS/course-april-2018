@@ -1,0 +1,47 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="modal-component">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+
+      .modal-dialog{
+        border: 1px solid black;
+        padding: 10px;
+      }
+    </style>
+    <div id="modal" class="modal-dialog">
+      <div class="modal-header">Felicidades <span>icon</span></div>
+
+      <div class="modal-body">
+        <h3>Body</h3>
+      </div>
+    </div>    
+  </template>
+
+  <script>
+    /**
+     * `modal-component`
+     * 
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class ModalComponent extends Polymer.Element {
+      static get is() { return 'modal-component'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'modal-component'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(ModalComponent.is, ModalComponent);
+  </script>
+</dom-module>
